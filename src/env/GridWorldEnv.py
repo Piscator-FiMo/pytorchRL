@@ -35,6 +35,7 @@ class GridWorldEnv(gym.Env):
 
         # We have 4 actions, corresponding to "right", "up", "left", "down"
         self.action_space = gym.spaces.Discrete(4)
+        self.action_spec = self.action_space
         # Dictionary maps the abstract actions to the directions on the grid
         self._action_to_direction = {
             0: np.array([1, 0], dtype=np.int32),  # right
