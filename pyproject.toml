@@ -9,9 +9,18 @@ readme = "README.md"
 requires-python = "3.12.8"
 dependencies = [
     "torchrl (>=0.6.0,<0.7.0)",
-    "tensordict (>=0.6.2,<0.7.0)",
-    "optuna (>=4.2.0,<5.0.0)"
+    "tensordict <=0.6.1",
+    "optuna (>=4.2.0,<5.0.0)",
+    "av (>=13.0.0,<14.0.0)",
+    "numpy (<=1.26.4)",
+    "gym (>=0.26.2)",
+    "pygame (>2.6.0)",
+    "torchvision (>=0.20.1,<0.21.0)",
+
+
 ]
+
+
 
 
 [build-system]
